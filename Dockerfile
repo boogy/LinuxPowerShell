@@ -5,7 +5,7 @@ LABEL Name="ubuntu/linuxpowershell"
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && \
-        apt upgrade && \
+        apt -yq upgrade && \
         apt -yq install \
         wget \
         libunwind8 \
