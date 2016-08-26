@@ -17,7 +17,7 @@ docker build -t boogy/linuxpowershell .
 ## Run PowerShell on Linux
 
 ```bash
-ubuntu [master] >> docker run -it --rm boogy/linuxpowershell
+docker run -it --rm boogy/linuxpowershell
 ```
 
 Somme output:
