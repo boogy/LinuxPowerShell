@@ -22,7 +22,7 @@ docker run -it --rm boogy/linuxpowershell
 
 Somme output:
 
-```bash
+```powershell
 PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
 
