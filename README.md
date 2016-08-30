@@ -26,7 +26,7 @@ Somme output:
 PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
 
-PS /> $PSVersionTable
+PS /home/poweruser> $PSVersionTable
 
 Name                           Value
 ----                           -----
@@ -40,22 +40,23 @@ WSManStackVersion              3.0
 PSRemotingProtocolVersion      2.3
 SerializationVersion           1.1.0.1
 
-PS /> Get-Module
+PS /home/poweruser> Get-Module
 
 ModuleType Version    Name                                ExportedCommands
 ---------- -------    ----                                ----------------
 Manifest   3.1.0.0    Microsoft.PowerShell.Management     {Add-Content, Clear-Content, Clear-Item, Clear-ItemProperty...}
 Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Add-Member, Add-Type, Clear-Variable, Compare-Object...}
+Script     3.0.0.0    PowerSploit                         {Add-NetUser, Add-ObjectAcl, Add-Persistence, Convert-NameToSid...}
 Script     1.2        PSReadLine                          {Get-PSReadlineKeyHandler, Get-PSReadlineOption, Remove-PSReadlineKeyHandler, Set-PSReadlineKeyHandler...}
 
-PS />
-PS /> Get-Process
+PS /home/poweruser>
+PS /home/poweruser> Get-Process
 
 Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
       0       0        0         22       2.00      1   1 powershell
 
-PS /> Get-Command -Module Microsoft.PowerShell.Management
+PS /home/poweruser> Get-Command -Module Microsoft.PowerShell.Management
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
@@ -105,8 +106,8 @@ Cmdlet          Wait-Process                                       3.1.0.0    Mi
 Using bash in powershell command line:
 
 ```bash
-PS /> $a = $(ls -l)
-PS /> $a
+PS /home/poweruser> $a = $(ls -l)
+PS /home/poweruser> $a
 total 40036
 drwxr-xr-x   2 root root     4096 Aug  9 16:25 bin
 drwxr-xr-x   2 root root     4096 Apr 12 20:14 boot
