@@ -26,6 +26,20 @@ Somme output:
 PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
 
+PS /> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      6.0.0-alpha
+PSEdition                      Core
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   3.0.0.0
+GitCommitId                    v6.0.0-alpha.9
+CLRVersion
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
 PS /> Get-Module
 
 ModuleType Version    Name                                ExportedCommands
