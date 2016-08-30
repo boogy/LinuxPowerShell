@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER boogy theboogymaster@gmail.com
 
-LABEL Name="ubuntu/LinuxPowerSploit"
+LABEL Name="ubuntu/LinuxPowerShell"
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && \
