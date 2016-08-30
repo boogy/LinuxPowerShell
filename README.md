@@ -105,7 +105,7 @@ Cmdlet          Wait-Process                                       3.1.0.0    Mi
 
 Using bash in powershell command line:
 
-```bash
+```powershell
 PS /home/poweruser> $a = $(ls -l)
 PS /home/poweruser> $a
 total 40036
