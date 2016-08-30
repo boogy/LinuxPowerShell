@@ -1,17 +1,26 @@
 FROM ubuntu:latest
 MAINTAINER boogy theboogymaster@gmail.com
 
-LABEL Name="ubuntu/linuxpowershell"
+LABEL Name="ubuntu/LinuxPowerSploit"
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && \
         apt -yq upgrade && \
         apt -yq install \
+        git \
         wget \
         libunwind8 \
         libicu55
 
+RUN useradd --create-home --shell /bin/bash poweruser
 RUN wget -q https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-alpha.9/powershell_6.0.0-alpha.9-1ubuntu1.16.04.1_amd64.deb -O powershell.deb && \
-        dpkg -i powershell.deb
+    dpkg -i powershell.deb && rm -f powershell.deb
+
+USER poweruser
+
+RUN mkdir -p /home/poweruser/.local/share/powershell/Modules/ && \
+    git clone https://github.com/PowerShellMafia/PowerSploit.git /home/poweruser/.local/share/powershell/Modules/PowerSploit
+
+WORKDIR /home/poweruser
 
 CMD [ "/usr/bin/powershell" ]
