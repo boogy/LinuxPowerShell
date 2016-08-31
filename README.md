@@ -1,6 +1,6 @@
 # LinuxPowerShell
 
-[![](https://images.microbadger.com/badges/image/boogy/linuxpowershell.svg)](https://microbadger.com/images/boogy/linuxpowershell "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/boogy/linuxpowershell.svg)](https://microbadger.com/images/boogy/linuxpowershell "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/boogy/linuxpowershell.svg)](http://microbadger.com/images/boogy/linuxpowershell "Get your own version badge on microbadger.com")
 
 PowerShell installed on latest ubuntu LTS
 
