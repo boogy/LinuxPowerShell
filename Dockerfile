@@ -13,7 +13,7 @@ RUN apt update && \
         libicu55
 
 RUN useradd --create-home --shell /bin/bash poweruser
-RUN wget -q https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-alpha.9/powershell_6.0.0-alpha.9-1ubuntu1.16.04.1_amd64.deb -O powershell.deb && \
+RUN wget -q https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-alpha.12/powershell_6.0.0-alpha.12-1ubuntu1.16.04.1_amd64.deb -O powershell.deb && \
     dpkg -i powershell.deb && rm -f powershell.deb
 
 USER poweruser
