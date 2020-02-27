@@ -10,7 +10,7 @@ RUN apt update \
         git wget libunwind8 libicu55 libcurl3
 
 RUN useradd --create-home --shell /bin/bash poweruser
-RUN wget -q https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-beta.4/powershell_6.0.0-beta.4-1ubuntu1.16.04.1_amd64.deb -O powershell.deb \
+RUN wget -q https://github.com/PowerShell/PowerShell/releases/download/v7.0.0-rc.3/powershell-lts_7.0.0-rc.3-1.ubuntu.18.04_amd64.deb -O powershell.deb \
     && dpkg -i powershell.deb \
     && apt-get install -f \
     && rm -f $_
